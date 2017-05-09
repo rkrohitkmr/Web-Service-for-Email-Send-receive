@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>body {
+    background-color: linen;
+     margin-left: 60px; 
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Email Service</title>
+</head>
+<body>
+
+<h2>Module For Sending Email </h2>
+
+ <div id="send" >
+      <form  method="post" action="MyServlet" >
+         Email:<br> <input type="text" name="emailid">@gmail.com<br>
+         Password:<br> <input type="Password" name="pas"><br>
+         Receiver's Email:<br> <input type="text" name="to"><br>
+         <textarea name="content" maxlength="2000" rows="7" cols="30"></textarea><br>
+         <br><input type="submit" name="First" value="SendEmail" ><br><br>
+        </form>
+ 
+
+</div>
+
+<h2>Module For checking Email </h2>
+<div id="log">
+        <form method="post" action="secondservlet">
+         Email: <br> <input type="text" name="emailid">@gmail.com<br>
+         Password:<br> <input type="Password" name="pas"><br>
+         <input type="submit" name="First" value="Inbox" ><br>
+        </form>
+  </div>
+
+
+
+
+  
+
+
+</body>
+</html>
